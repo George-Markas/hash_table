@@ -1,6 +1,5 @@
 #define HASH_TABLE_IMPL
 #include "hash_table.h"
-#include <stdio.h>
 
 #define INITIAL_CAPACITY 2
 

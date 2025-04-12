@@ -49,6 +49,7 @@ inline uint64_t fnv_1a_hash(const char* key) {
         hash ^= *ptr;
         hash *= FNV_PRIME;
     }
+
     return hash;
 }
 
