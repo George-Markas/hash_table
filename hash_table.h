@@ -136,7 +136,7 @@ inline bool ht_insert(ht_t* table, const char *key, const void* data, const size
     const uint64_t hash = fnv_1a_hash(key);
     // If there is no space left, attempt to expand the hash table
     if(table->length == table->capacity) {
-        // if(!ht_expand_table(table)) { // Resizing currently not supported since it breaks the hashing, will revist
+        // if(!ht_expand_table(table)) { // Resizing currently not supported since it breaks the hashing, will revisit
             fprintf(stderr, "Insertion failed: insufficient memory");
             ht_destroy_item(new_item);
             return false;
