@@ -1,7 +1,7 @@
 #define HASH_TABLE_IMPL
 #include "hash_table.h"
 
-#define INITIAL_CAPACITY 2
+#define INITIAL_CAPACITY 16
 
 void ht_print_strings(const ht_t* table) {
     static size_t count = 0;

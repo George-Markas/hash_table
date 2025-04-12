@@ -6,7 +6,6 @@ Simple implementation of a hash table in C as a single header file.
 ```C
 #define HASH_TABLE_IMPL
 #include "hash_table.h"
-#include <stdio.h>
 
 #define INITIAL_CAPACITY 16
 
