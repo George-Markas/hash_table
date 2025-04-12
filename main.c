@@ -18,13 +18,13 @@ int main(void) {
     ht_t* some_table = ht_create_table(INITIAL_CAPACITY);
 
     // Insert some strings
-    ht_insert(some_table,"Juliett", "bar", sizeof(char) * 4);
-    ht_insert(some_table,"Sierra", "foo", sizeof(char) * 4);
+    ht_insert(some_table, "Juliett", "bar", sizeof(char) * 4);
+    ht_insert(some_table, "Sierra", "foo", sizeof(char) * 4);
     ht_insert(some_table, "Foxtrot", "baz", sizeof(char) * 4);
     ht_print_strings(some_table);
 
     // Overwrite the first string with a new one
-    ht_insert(some_table,"Sierra", "qux", sizeof(char) * 4);
+    ht_insert(some_table, "Sierra", "qux", sizeof(char) * 4);
     ht_print_strings(some_table);
 
     // Delete the second string
