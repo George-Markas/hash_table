@@ -5,7 +5,7 @@
 
 void ht_print_strings(const ht_t* table) {
     static size_t count = 0;
-    printf("\n\033[0;32mTable contents (%lu):\033[0m\n", count + 1);
+    printf("\n\033[0;32mTable contents (%llu):\033[0m\n", count + 1);
     for(size_t i = 0; i < table->capacity; i++ ) {
         if(table->items[i] != NULL)
             printf("%s\n", (char*) table->items[i]->data);
