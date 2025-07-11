@@ -1,8 +1,8 @@
 # Hash Table
 
-Simple implementation of a hash table in C as a single header file.
+Hash table implementation in "stb" format
 
-## Example usage (as provided in main.c):
+## Example usage:
 ```C
 #define HASH_TABLE_IMPL
 #include "hash_table.h"
